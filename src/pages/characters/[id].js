@@ -1,3 +1,5 @@
+/* import client from "../../apollo-client";
+
 export default function Character({ character }) {}
 
 export async function getStaticPaths() {
@@ -24,3 +26,4 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {}
+ */
