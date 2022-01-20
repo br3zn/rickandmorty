@@ -1,6 +1,6 @@
 /* data gets fetched once the page is rendered */
 
-import Head from "next/head";
+/* import Head from "next/head";
 import Image from "next/image";
 import ClientOnly from "../components/ClientOnly";
 import Countries from "../components/Countries";
@@ -54,3 +54,4 @@ export default function ClientSide() {
     </div>
   );
 }
+ */
