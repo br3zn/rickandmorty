@@ -1,12 +1,11 @@
 /* fetch data at each request */
 
-import Head from "next/head";
+/* import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import { gql } from "@apollo/client";
-import client from "../apollo-client";
+import client from "../apollo-client"; */
 
-export default function Home({ countries }) {
+/* export default function Home({ countries }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -73,9 +72,9 @@ export default function Home({ countries }) {
       </footer>
     </div>
   );
-}
+} */
 
-export async function getServerSideProps() {
+/* export async function getServerSideProps() {
   const { data } = await client.query({
     query: gql`
       query Countries {
@@ -94,3 +93,4 @@ export async function getServerSideProps() {
     },
   };
 }
+ */
