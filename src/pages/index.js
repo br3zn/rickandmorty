@@ -1,6 +1,3 @@
-/* fetch data at build time, maybe stale */
-
-import Head from "next/head";
 import { Characters } from "../components/Characters";
 
 export default function Home() {

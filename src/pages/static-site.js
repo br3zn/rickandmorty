@@ -1,9 +1,10 @@
-/* fetch data at build time, maybe stale */
+/*
+ *  fetch data at build time, maybe stale if updated after site building
+ */
 
-import Head from "next/head";
 import Image from "next/image";
 import client from "../apollo-client";
-import { gql, useQuery } from "@apollo/client";
+import { gql } from "@apollo/client";
 
 export default function Home({ characters }) {
   return (

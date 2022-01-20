@@ -1,3 +1,7 @@
+/*
+ *  base layout for every page
+ */
+
 import Head from "next/head";
 import Heading from "./Heading";
 import Footer from "./Footer";

@@ -1,3 +1,7 @@
+/*
+ *  heading with project name as svg graphic - no custom font to load
+ */
+
 import Image from "next/image";
 
 export default function Heading() {

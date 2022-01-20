@@ -1,3 +1,7 @@
+/*
+ *  wrap our app in the apollo provider and base layout components
+ */
+
 import "../styles/globals.css";
 import Layout from "../components/layout";
 import { ApolloProvider } from "@apollo/client";

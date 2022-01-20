@@ -1,3 +1,7 @@
+/*
+ *  fetch data from api following the apollographql docs
+ */
+
 import Image from "next/image";
 import { gql, useQuery } from "@apollo/client";
 
