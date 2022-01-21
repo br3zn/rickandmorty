@@ -42,9 +42,6 @@ export default function Home({ characters }) {
   );
 }
 
-//which version is better? top is from graphql apollo/client docs and below from nextjs docs
-// below is using ssr, top ???
-// below is not complete, removed mapping of response array in Home
 export async function getStaticProps() {
   const { data } = await client.query({
     query: gql`
