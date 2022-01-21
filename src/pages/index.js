@@ -16,5 +16,5 @@ export default function Home() {
  ? whats the difference between the method used
  ? on this site and static-site.js which uses staticProps
  * static-site.js has a slightly faster loading time
- ! not slightly faster, cut the loading time down to half 
+ ! not slightly faster, cut the loading time down to half on build
 */
