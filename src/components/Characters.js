@@ -27,7 +27,7 @@ export function Characters() {
   return data.characters.results.map(({ id, image, name, status, species }) => (
     <div
       key={id}
-      className="bg-white shadow flex flex-col justify-center items-center m-4 p-6 border border-solid border-gray-400 rounded-lg w-full md:max-w-xs hover:text-blue-600 hover:border-blue-600 transition-all"
+      className="transition-all bg-white shadow flex flex-col justify-center items-center m-4 p-6 border border-solid border-gray-400 rounded-lg w-full md:max-w-xs hover:text-blue-600 hover:border-blue-600"
     >
       <a href={"#" + id} aria-hidden="true" className="aal_anchor" id={id}>
         <Image src={image} alt={name} width={256} height={256} />
