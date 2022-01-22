@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <>
       <p className="mt-16 text-2xl text-center">
-        Characters - {page && !Number.isNaN(page) && `Page ${page}`}
+        Characters - {page && `Page ${page}`}
       </p>
       <CharactersList page={page} />
     </>
