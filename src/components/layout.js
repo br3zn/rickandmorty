@@ -15,7 +15,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Heading />
-      <main className="px-8 bg-gray-300 min-h-screen flex flex-col justify-center items-center">
+      <main className="px-8 bg-gray-300 min-h-screen flex flex-col items-center">
         {children}
       </main>
       <Footer />

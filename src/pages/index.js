@@ -2,7 +2,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <p className="mt-16 text-2xl text-center">
+      <p className="mt-16 text-2xl text-center text-blue-500 hover:text-blue-400">
         <Link href="/characters/1">Character overview</Link>
       </p>
     </>
