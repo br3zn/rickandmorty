@@ -1,13 +1,10 @@
-import { Characters } from "../components/Characters";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <p className="mt-16 text-2xl text-center">Character overview:</p>
-
-      <div className="flex items-center justify-center flex-wrap max-w-3xl">
-        <Characters />
-      </div>
+      <p className="mt-16 text-2xl text-center">
+        <Link href="/characters/1">Character overview</Link>
+      </p>
     </>
   );
 }
