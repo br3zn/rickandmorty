@@ -1,13 +1,15 @@
-import { Characters } from "../../../components/Characters";
+import { CharactersList } from "../../../components/Characters";
+import { useRouter } from "next/router";
 
-export default function Page({ page }) {
+export default function Page() {
+  const { query } = useRouter();
+  const page = Number.parseInt(query.page);
   return (
     <>
-      <p className="mt-16 text-2xl text-center">Characters - Page {page}</p>
-
-      <div className="flex items-center justify-center flex-wrap w-5/6">
-        <Characters />
-      </div>
+      <p className="mt-16 text-2xl text-center">
+        Characters - {page && !Number.isNaN(page) && `Page ${page}`}
+      </p>
+      <CharactersList page={page} />
     </>
   );
 }
