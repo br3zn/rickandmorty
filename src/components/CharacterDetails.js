@@ -4,7 +4,7 @@
 
 import Image from "next/image";
 import { gql, useQuery } from "@apollo/client";
-import Link from "next/link";
+import Head from "next/head";
 
 const CHARACTER_DETAILS = gql`
   query Character($characterId: ID!) {
@@ -34,13 +34,17 @@ export function CharacterDetails({ charId }) {
 
   return (
     <>
-      <div className="flex items-center justify-center flex-wrap w-5/6">
-        <div className="transition-all bg-white shadow flex flex-col justify-center items-center  p-6 border border-solid border-gray-400 rounded-lg w-full md:max-w-xs hover:text-blue-600 hover:border-blue-600 hover:scale-105">
+      <Head>
+        <title>C-137 - {data.character.name}</title>
+      </Head>
+      <div className="flex items-center justify-center flex-wrap">
+        <div className="transition-all bg-white shadow flex justify-center items-center border border-solid border-gray-400 rounded-lg w-full md:max-w-xs hover:text-blue-600 hover:border-blue-600">
           <Image
             src={data.character.image}
             alt={data.character.name}
             width={256}
             height={256}
+            className="rounded-tl"
           />
           <h3 className="text-lg">{data.character.name}</h3>
           <p>
