@@ -1,5 +1,5 @@
 /*
- *  wrap our app in the apollo provider and base layout components
+ *  wrap our app in the apollo provider- and layout components
  */
 
 import "../styles/globals.css";
