@@ -4,13 +4,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "./LogoGraphic";
 
 export default function Heading() {
   return (
-    <header className="sticky top-0 left-0 z-10 bg-white bg-opacity-40 backdrop-blur-sm flex flex-col justify-center items-center">
+    <header className="max-w-full sticky top-0 left-0 z-10 bg-white bg-opacity-40 backdrop-blur-sm flex flex-col justify-center items-center">
       <Link href="/" passHref>
-        <div className="cursor-pointer hover:scale-105 transition-all w-full py-5 flex justify-center">
-          <Image src="/c-137.svg" width={256} height={128} alt="C-137" />
+        <div className="cursor-pointer hover:scale-105 transition-all py-5 flex justify-center">
+          <Logo fillColor="green" strokeColor="yellow" />
         </div>
       </Link>
       <small className="text-gray-600">Rick and Morty Database</small>
