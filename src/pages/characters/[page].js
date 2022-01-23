@@ -1,4 +1,4 @@
-import { CharactersList } from "../../components/Characters";
+import { CharactersList } from "../../components/CharactersList";
 import { useRouter } from "next/router";
 
 export default function Page() {
