@@ -1,5 +1,6 @@
 /*
  *  fetch data from api following the apollographql docs
+ *  currently not really taking advantage of next.js
  */
 
 import Image from "next/image";
