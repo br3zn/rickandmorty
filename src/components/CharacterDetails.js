@@ -37,25 +37,24 @@ export function CharacterDetails({ charId }) {
       <Head>
         <title>C-137 - {data.character.name}</title>
       </Head>
-      <div className="flex items-center justify-center flex-wrap">
-        <div className="overflow-hidden transition-all shadow flex flex-col justify-center items-center border border-solid border-gray-400 rounded-lg min-h-full w-full md:max-w-2xl hover:text-blue-600 hover:border-blue-600">
-          <div className="overflow-hidden w-full max-h-64 object-fill">
-            <Image
-              src={data.character.image}
-              alt={data.character.name}
-              width={256}
-              height={256}
-              layout="responsive"
-            />
-          </div>
-          <div className="bg-white w-full h-full text-center p-3">
-            <h3 className="text-lg">{data.character.name}</h3>
-            <p>
-              {data.character.species}
-              <small> - {data.character.status}</small>
-            </p>
-            <p>Location: {data.character.origin.name}</p>
-          </div>
+      <div className="overflow-hidden transition-all shadow flex flex-col justify-center items-center border border-solid border-gray-400 rounded-lg min-h-full w-full sm:max-w-md hover:text-blue-600 hover:border-blue-600">
+        <div className="overflow-hidden w-full max-h-min">
+          <Image
+            src={data.character.image}
+            alt={data.character.name}
+            width={256}
+            height={256}
+            layout="responsive"
+            objectPosition="center"
+          />
+        </div>
+        <div className="bg-white w-full h-full text-center p-3">
+          <h3 className="text-lg">{data.character.name}</h3>
+          <p>
+            {data.character.species}
+            <small> - {data.character.status}</small>
+          </p>
+          <p>Location: {data.character.origin.name}</p>
         </div>
       </div>
     </>
