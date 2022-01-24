@@ -40,7 +40,7 @@ export function CharactersList({ page }) {
       <div className="flex items-center justify-center flex-wrap gap-4 w-5/6">
         {data.characters.results.map(({ id, image, name, status, species }) => (
           <Link passHref href={"/character/" + id} id={id} key={id}>
-            <div className="overflow-hidden cursor-pointer transition-all bg-white shadow flex flex-col justify-between items-center pb-6 border border-solid border-gray-400 rounded-lg w-full md:max-w-xs hover:text-blue-600 hover:border-blue-600 hover:scale-105">
+            <article className="overflow-hidden cursor-pointer transition-all bg-white shadow flex flex-col justify-between items-center pb-6 border border-solid border-gray-400 rounded-lg w-full md:max-w-xs hover:text-blue-600 hover:border-blue-600 hover:scale-105">
               <div className="overflow-hidden w-full h-64 object-scale-down">
                 <Image
                   src={image}
@@ -50,7 +50,7 @@ export function CharactersList({ page }) {
                   layout="responsive"
                 />
               </div>
-              <div>
+              <div className="pt-2">
                 <h3 className="text-lg">
                   <a>{name}</a>
                 </h3>
@@ -59,7 +59,7 @@ export function CharactersList({ page }) {
                   <small> - {status}</small>
                 </p>
               </div>
-            </div>
+            </article>
           </Link>
         ))}
       </div>
