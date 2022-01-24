@@ -8,7 +8,7 @@ import Logo from "./LogoGraphic";
 
 export default function Heading() {
   return (
-    <header className="max-w-full sticky top-0 left-0 z-10 bg-white bg-opacity-40 backdrop-blur-sm flex flex-col justify-center items-center">
+    <header className="max-w-full sticky top-0 left-0 z-30 bg-white bg-opacity-40 backdrop-blur-sm flex flex-col justify-center items-center">
       <Link href="/" passHref>
         <div className="cursor-pointer hover:scale-105 transition-all py-5 flex justify-center">
           <Logo fillColor="green" strokeColor="yellow" />
