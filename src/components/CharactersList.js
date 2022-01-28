@@ -37,7 +37,7 @@ export function CharactersList({ page }) {
       <Head>
         <title>C-137 - Character overview</title>
       </Head>
-      <div className="flex items-center justify-center flex-wrap gap-4 w-5/6">
+      <div className="flex items-center justify-center flex-wrap gap-4 w-5/6 mb-4">
         {data.characters.results.map(({ id, image, name, status, species }) => (
           <Link passHref href={"/character/" + id} id={id} key={id}>
             <article className="overflow-hidden cursor-pointer transition-all bg-white shadow flex flex-col justify-between items-center pb-6 border border-solid border-gray-400 rounded-lg w-full md:max-w-xs hover:text-blue-600 hover:border-blue-600 hover:scale-105 hover:shadow-lg z-10 hover:z-20">
@@ -63,7 +63,7 @@ export function CharactersList({ page }) {
           </Link>
         ))}
       </div>
-      <div className="flex w-full md:w-2/3 lg:w-1/3 justify-between">
+      <div className="pt-4 flex w-full md:w-2/3 lg:w-1/3 justify-between">
         {page > 1 && (
           <Link href={`/characters/${page - 1}`}>Previous Page</Link>
         )}
