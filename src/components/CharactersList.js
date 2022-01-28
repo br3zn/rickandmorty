@@ -50,7 +50,7 @@ export function CharactersList({ page }) {
                   layout="responsive"
                 />
               </div>
-              <div className="pt-2">
+              <div className="pt-2 text-center">
                 <h3 className="text-lg">
                   <a>{name}</a>
                 </h3>
