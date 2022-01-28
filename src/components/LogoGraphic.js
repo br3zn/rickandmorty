@@ -1,8 +1,7 @@
 export default function Logo({ fillColor, strokeColor }) {
   return (
     <svg
-      width="298"
-      height="151"
+      className="h-16 w-auto"
       viewBox="0 0 298 151"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
